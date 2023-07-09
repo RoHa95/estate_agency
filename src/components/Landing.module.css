@@ -1,5 +1,224 @@
-
-.container img{
+@font-face {
+  font-family: "iran-sansX";
+  src: url("/src/assests/fonts/IRANSans-web.woff") format("woff");
+}
+* {
+  font-family: "iran-sansX";
+}
+.container img {
+  position: absolute;
+  width: 100%;
+  top: 80px;
+  z-index: -1;
+  left: 0;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content {
+  width: 100%;
+  margin-top: 100px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  justify-content: center;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.content h1 {
+  font-size: 15px;
+  color: #000;
+  padding-right: 15px;
+}
+.content h5 {
+  font-size: 10px;
+  color: #000;
+  background-color: #fff;
+  border-radius: 5px;
+  padding-right: 15px;
+  margin: 0;
+}
+.form_container {
+  margin-top: 25px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 20px;
+}
+.form_container__item {
+  padding: 0px 10px;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.form_container__item:focus {
+  color: #3e0fe6;
+}
+.form__labels {
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+.form__content {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  padding: 0 20px;
+}
+.form__content p {
+  font-size: 12px;
+}
+.form__content__input {
+  border-radius: 7px;
+  padding: 10px;
+  outline: none;
+  border: 1px solid #444;
+  text-align: right;
+  margin-bottom: 10px;
+}
+.form__content__button {
+  border-radius: 7px;
+  padding: 10px;
+  outline: none;
+  border: 1px solid #444;
+  text-align: center;
+  margin: 0;
+  margin-left: 2px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.form__button__container {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 480px) {
+  .content {
+    margin-top: 150px;
+  }
+  .content h1 {
+    font-size: 20px;
+    color: #000;
+    padding-right: 15px;
+  }
+  .content h5 {
+    font-size: 12px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 5px;
+    padding-right: 15px;
+    margin: 0;
+  }
+  .form__content p {
+    font-size: 12px;
+  }
+  .form_container__item {
+    padding: 0px 10px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .form__content__input {
+    border-radius: 7px;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #444;
+    text-align: right;
+    margin-bottom: 30px;
+  }
+  .form__content__button {
+    border-radius: 7px;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #444;
+    text-align: center;
+    margin: 0;
+    margin-left: 2px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container img {
+    position: absolute;
     width: 100%;
-    margin-top: 65px;
+    top: 80px;
+    z-index: -1;
+    left: 0;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .content {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    margin-top: 80px;
+  }
+  .content h1 {
+    font-size: 40px;
+    color: #fff;
+    margin: 0;
+  }
+  .content h5 {
+    font-size: 20px;
+    color: #000;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 5px 15px;
+    width: fit-content;
+  }
+  .form_container {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 20px;
+  }
+  .form_container__item {
+    padding: 0px 10px;
+  }
+  .form__labels {
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+  }
+  .form__content {
+    text-align: right;
+    padding: 0 20px;
+  }
+  .form__content__input {
+    border-radius: 7px;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #444;
+    text-align: right;
+    margin-bottom: 10px;
+    order: 2;
+    width: 90%;
+    height: 28px;
+    margin-left: 15px;
+  }
+  .form__content__button {
+    border-radius: 7px;
+    padding: 10px;
+    outline: none;
+    border: 1px solid #444;
+    text-align: center;
+    margin: 0;
+    margin-left: 2px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    order: 1;
+    width: 10%;
+    height: 50px;
+    font-size: 10px;
+  }
+  .form__button__container {
+    flex-direction: row;
+    width: 100%;
+  }
 }
