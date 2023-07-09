@@ -1,0 +1,8 @@
+@font-face {
+  font-family: "iran-sansX";
+  src: url("/assets/fonts/IRANSans-web.woff") format("woff");
+}
+body,
+button {
+  font-family: "iran-sansX";
+}
