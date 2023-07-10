@@ -2,6 +2,24 @@
   font-family: "iran-sansX";
   src: url("/src/assests/fonts/IRANSans-web.woff") format("woff");
 }
+@font-face {
+  font-family: "BYekan";
+  font-weight: 400;
+  font-style: normal;
+  src: url("/src/assests/fonts/BYekan.ttf") format("truetype");
+}
+@font-face {
+  font-family: "BYekan";
+  font-weight: 700;
+  font-style: normal;
+  src: url("/src/assests/fonts/BYekanBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Diplomat";
+  font-weight: 400;
+  font-style: normal;
+  src: url("/src/assests/fonts/FarDiplomat.ttf") format("truetype");
+}
 * {
   font-family: "iran-sansX";
 }

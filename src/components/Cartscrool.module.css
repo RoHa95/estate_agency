@@ -1,0 +1,59 @@
+.Cartscrool {
+  margin-top: 200px;
+  text-align: right;
+  padding: 0 20px;
+  margin-bottom: 50px;
+}
+.Cartscrool__titleContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Cartscrool__buttonContainer {
+  display: flex;
+}
+.Cartscrool__buttonContainer div {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  border: 1px solid #444;
+  margin: 0 10px;
+}
+
+.Cartscrool__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.Cartscrool__button img {
+  width: 50%;
+  height: 50%;
+}
+.Cartscrool h1 {
+  font-size: 30px;
+  color: #131111;
+}
+.Cartscrool h3 {
+  font-size: 20px;
+  color: #444;
+  margin-top: 30px;
+}
+.cart__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  overflow: auto;
+  margin-top: 30px;
+  overflow-x: hidden;
+  direction: rtl;
+}
+.red {
+  background-color: red;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .Cartscrool {
+    padding: 0 100px;
+  }
+}
