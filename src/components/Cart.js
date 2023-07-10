@@ -4,12 +4,13 @@ import styles from "./Cart.module.css";
 //picture
 import homepic from "../assests/q3.jpg";
 
-const Cart = () => {
+const Cart = (props) => {
+  const { image, title, category } = props;
   return (
     <div className={styles.cart}>
-      <img className={styles.cart__image} src={homepic} alt="home"></img>
-      <h1 className={styles.cart__title}>اپارتمان</h1>
-      <h2 className={styles.cart__category}>اگهی فروش در تهران</h2>
+      <img className={styles.cart__image} src={image} alt="home"></img>
+      <h2 className={styles.cart__title}>{title}</h2>
+      <h3 className={styles.cart__category}>{category}</h3>
     </div>
   );
 };
