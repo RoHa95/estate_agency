@@ -1,0 +1,21 @@
+export const validate2 = (data) => {
+  const errors = {};
+
+  if (!data.phoneNumber) {
+    errors.phoneNumber = "شماره همراه را وارد کنید";
+  } else if (data.phoneNumber.length < 11) {
+    errors.phoneNumber = "لطفا به صورت کامل وارد کنید";
+  } else {
+    delete errors.phoneNumber;
+  }
+
+  if (!data.password) {
+    errors.password = "گذرواژه را وارد کنید";
+  } else if (data.password.length < 8) {
+    errors.password = "گذرواژه نمی تواند کمتر از 8 کاراکتر باشد";
+  } else {
+    delete errors.password;
+  }
+
+  return errors;
+};

@@ -54,10 +54,10 @@ const Signup = () => {
     <div className={styles.signup__container}>
       <div className={styles.signup__background}>
         <div className={styles.signup__background__content}>
-          <h1>قبلا ثبتنام کرده اید؟</h1>
           <Link to="/signin">
             <button>ورود</button>
           </Link>
+          <h1>قبلا ثبتنام کرده اید؟</h1>
         </div>
       </div>
       <div className={styles.signup__form}>

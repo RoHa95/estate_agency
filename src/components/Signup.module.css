@@ -144,7 +144,7 @@
     flex-direction: column;
   }
   .signup__background__content button {
-    order: 2;
+    order: 1;
     border-radius: 0;
     padding: 10px 45px;
     font-size: 15px;
