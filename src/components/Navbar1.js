@@ -32,9 +32,9 @@ const Navbar1 = () => {
           </div>
           <div className={styles.nav__login}>
             <img src={signin} alt="sign-in" />
-            <Link>ورود</Link>
+            <Link to="/signin">ورود</Link>
             <img src={signup} alt="sign-up" />
-            <Link>ثبتنام</Link>
+            <Link to="/signup">ثبتنام</Link>
           </div>
         </div>
 

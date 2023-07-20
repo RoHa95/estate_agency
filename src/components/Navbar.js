@@ -1,7 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom/cjs/react-router-dom.min";
-import { useState } from "react";
-
+import { Link } from "react-router-dom";
 //styles
 import styles from "./Navbar.module.css";
 
@@ -9,17 +7,15 @@ import styles from "./Navbar.module.css";
 import signup from "../assests/sign-up.png";
 import logo from "../assests/logo2.png";
 import signin from "../assests/sign-in.png";
-import menu from "../assests/menu.svg";
-import close from "../assests/close.svg";
 
 const Navbar = () => {
   return (
     <div className={styles.container}>
       <div className={styles.login}>
         <img src={signin} alt="sign-in" />
-        <Link>ورود</Link>
+        <a href="/signup">ورود</a>
         <img src={signup} alt="sign-up" />
-        <Link>ثبتنام</Link>
+        <a href="/signup">ثبتنام</a>
       </div>
       <div className={styles.nav_toggler}>
         <div className={[styles.bar, styles.bar_one]}></div>

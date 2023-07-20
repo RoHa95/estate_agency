@@ -1,14 +1,17 @@
 import "./App.css";
-
+import { Route, Switch } from "react-router-dom";
 //component
-import Navbar1 from "./components/Navbar1";
 import Landing from "./components/Landing";
-
+import Signup from "./components/Signup";
+import Signin from "./components/Signin";
 function App() {
   return (
     <div className="App">
-      <Navbar1 />
-      <Landing />
+      <Switch>
+        <Route path="/signup" component={Signup} />
+        <Route path="/signin" component={Signin} />
+        <Route path="/" component={Landing} />
+      </Switch>
     </div>
   );
 }
